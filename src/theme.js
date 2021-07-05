@@ -217,6 +217,14 @@ theme.typography = {
 			letterSpacing: '-.005em'
 		}
 	},
+	device_headline: {
+		[theme.breakpoints.up('mobile')]: {
+			fontSize: '24px',
+			lineHeight: 1.16667,
+			fontWeight: 600,
+			letterSpacing: '.009em'
+		}
+	},
 	tile_headline: {
 		[theme.breakpoints.up('mobile')]: {
 			fontSize: '30px',

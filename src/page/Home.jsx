@@ -7,18 +7,20 @@ import IPadProHero from '../section/hero/IPadPro';
 import IPadAirHero from '../section/hero/IPadAir';
 import IPadHero from '../section/hero/iPad';
 import IPadMiniHero from '../section/hero/IPadMini';
+import CompareSection from '../section/compare/CompareSection';
 
 const Home = () => {
 	return (
 		<React.Fragment>
 			<AppHeader />
 			<ProductNavBar />
-			<Grid component='main' container sx={{ width: '100%' }}>
+			<Grid component='main' container sx={{ width: '100%', backgroundColor: '#f5f5f7' }}>
 				<Ribbon />
 				<IPadProHero />
 				<IPadAirHero />
 				<IPadHero />
 				<IPadMiniHero />
+				<CompareSection />
 			</Grid>
 		</React.Fragment>
 	);
