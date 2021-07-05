@@ -3,7 +3,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
 import {styled} from '@material-ui/core/styles'
-import { useTheme } from '@material-ui/core/styles';
+
 const CustomTabs = styled(Tabs,{name:'iPad family of products'})(({theme}) => ({
   height:'100%',
   '& .MuiTabs-flexContainer':{

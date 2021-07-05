@@ -104,6 +104,13 @@ theme.typography = {
 		letterSpacing: '-.008em',
 		color: '#bf4800'
 	},
+	violator: {
+		fontSize: '12px',
+		lineHeight: 2.08337,
+		fontWeight: 400,
+		letterSpacing: '-.011em',
+		color: '#bf4800'
+	},
 	caption: {
 		fontSize: '12px',
 		lineHeight: 1.33337,
@@ -188,6 +195,26 @@ theme.typography = {
 			lineHeight: 1.0625,
 			fontWeight: 600,
 			letterSpacing: '-.009em'
+		}
+	},
+	hero_headline: {
+		[theme.breakpoints.up('mobile')]: {
+			fontSize: '30px',
+			lineHeight: 1.1,
+			fontWeight: 600,
+			letterSpacing: '0em'
+		},
+		[theme.breakpoints.up('tablet')]: {
+			fontSize: '48px',
+			lineHeight: 1.08349,
+			fontWeight: 600,
+			letterSpacing: '-.003em'
+		},
+		[theme.breakpoints.up('laptop')]: {
+			fontSize: '56px',
+			lineHeight: 1.07143,
+			fontWeight: 600,
+			letterSpacing: '-.005em'
 		}
 	},
 	tile_headline: {
