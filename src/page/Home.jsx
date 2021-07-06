@@ -8,6 +8,7 @@ import IPadAirHero from '../section/hero/IPadAir';
 import IPadHero from '../section/hero/iPad';
 import IPadMiniHero from '../section/hero/IPadMini';
 import CompareSection from '../section/compare/CompareSection';
+import BuyIPadForCollege from '../section/bts_2021/BuyIPadForCollege';
 
 const Home = () => {
 	return (
@@ -21,6 +22,7 @@ const Home = () => {
 				<IPadHero />
 				<IPadMiniHero />
 				<CompareSection />
+				<BuyIPadForCollege />
 			</Grid>
 		</React.Fragment>
 	);
