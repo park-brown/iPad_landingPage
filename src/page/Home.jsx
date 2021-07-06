@@ -11,6 +11,7 @@ import CompareSection from '../section/compare/CompareSection';
 import BuyIPadForCollege from '../section/bts_2021/BuyIPadForCollege';
 import Carriers from '../section/carriers/Carriers';
 import TradeAndAppleCard from '../section/acmi_trade/TradeAndAppleCard';
+import IPadOs from '../section/iPadOS15/IPadOs';
 
 const Home = () => {
 	return (
@@ -27,6 +28,7 @@ const Home = () => {
 				<BuyIPadForCollege />
 				<Carriers />
 				<TradeAndAppleCard />
+				<IPadOs />
 			</Grid>
 		</React.Fragment>
 	);
