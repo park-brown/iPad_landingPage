@@ -22,8 +22,7 @@ const BuyIPadForCollege = () => {
 				width: '100%',
 				maxWidth: { mobile: '100%', tablet: '776px', laptop: '1440px' },
 				m: { mobile: '0 0 15px 0', tablet: '0 auto 20px auto', laptop: '-10px auto 30px auto' },
-				p: { mobile: 0, tablet: '0 20px', laptop: '0 30px' },
-				height: '600px'
+				p: { mobile: 0, tablet: '0 20px', laptop: '0 30px' }
 			}}>
 			<Box
 				className='content-wrapper'
