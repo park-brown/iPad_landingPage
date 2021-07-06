@@ -225,6 +225,14 @@ theme.typography = {
 			letterSpacing: '.009em'
 		}
 	},
+	grid_headline: {
+		[theme.breakpoints.up('mobile')]: {
+			fontSize: '20px',
+			lineHeight: 1.1,
+			fontWeight: 600,
+			letterSpacing: '0em'
+		}
+	},
 	tile_headline: {
 		[theme.breakpoints.up('mobile')]: {
 			fontSize: '30px',

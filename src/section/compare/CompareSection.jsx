@@ -118,6 +118,114 @@ const DeviceAvailableColor = styled('figure', { name: 'device-available-color' }
 	backgroundSize: 'cover',
 	backgroundRepeat: 'no-repeat'
 }));
+const DeviceDisplayCell = styled(Box, { name: 'device-display-cell' })(({ gridArea }) => ({
+	gridArea: gridArea,
+	width: '100%',
+	padding: '7px 0 0 0',
+	display: 'flex',
+	flexDirection: 'column',
+	alignItems: 'center',
+	justifyContent: 'flex-start'
+}));
+const DeviceChipCell = styled(Box, { name: 'device-chip-cell' })(({ gridArea, theme }) => ({
+	gridArea: gridArea,
+	padding: '4px 0 0 0',
+	width: '90%',
+	margin: '0 auto',
+	display: 'flex',
+	alignItems: 'center',
+	flexDirection: 'column',
+	[theme.breakpoints.up('tablet')]: {
+		width: '100%'
+	}
+}));
+
+const ChipImage = styled('figure', { name: 'chip-icon' })(({ icon }) => ({
+	width: '38px',
+	height: '38px',
+	backgroundImage: icon,
+	margin: '0 auto 5px auto',
+	backgroundSize: 'cover',
+	backgroundRepeat: 'no-repeat'
+}));
+const DeviceConnectionCell = styled(Box, { name: 'device-connection-cell' })(({ gridArea }) => ({
+	gridArea: gridArea,
+	width: '100%',
+	padding: '7px 0 0 0',
+	display: 'flex',
+	flexDirection: 'column',
+	alignItems: 'center',
+	justifyContent: 'flex-start'
+}));
+const ConnectionImage = styled('figure', { name: 'chip-icon' })(({ icon }) => ({
+	width: icon.width,
+	height: icon.height,
+	backgroundImage: icon.url,
+	margin: '0 auto 5px auto',
+	backgroundSize: 'cover',
+	backgroundRepeat: 'no-repeat'
+}));
+const DeviceCellularCell = styled(Box, { name: 'device-cellular-cell' })(({ gridArea }) => ({
+	gridArea: gridArea,
+	width: '100%',
+	padding: '7px 0 0 0',
+	display: 'flex',
+	flexDirection: 'column',
+	alignItems: 'center',
+	justifyContent: 'flex-start'
+}));
+const CellularImage = styled('figure', { name: 'cellular-icon' })(({ icon }) => ({
+	width: '48px',
+	height: '35px',
+	backgroundImage: icon.url,
+	margin: '0 auto 5px auto',
+	backgroundSize: 'cover',
+	backgroundRepeat: 'no-repeat'
+}));
+const DevicePencilCell = styled(Box, { name: 'device-pencil-cell' })(({ gridArea }) => ({
+	gridArea: gridArea,
+	width: '100%',
+	padding: '7px 0 0 0',
+	display: 'flex',
+	flexDirection: 'column',
+	alignItems: 'center',
+	justifyContent: 'flex-start'
+}));
+const PencilImage = styled('figure', { name: 'pencil-icon' })(({ icon }) => ({
+	width: '62px',
+	height: '6px',
+	backgroundImage: 'url(./compare/compare_pencil_large_2x.png)',
+	margin: '0 auto 10px auto',
+	backgroundSize: 'cover',
+	backgroundRepeat: 'no-repeat'
+}));
+const DeviceKeyboardCell = styled(Box, { name: 'device-keyboard-cell' })(({ gridArea }) => ({
+	gridArea: gridArea,
+	width: '100%',
+	padding: '7px 0 0 0',
+	display: 'flex',
+	flexDirection: 'column',
+	alignItems: 'center',
+	justifyContent: 'flex-start'
+}));
+const KeyBoardImage = styled('figure', { name: 'keyboard-icon' })(({ icon }) => ({
+	width: '68px',
+	height: '49px',
+	backgroundImage: icon.url,
+	margin: '0 auto 10px auto',
+	backgroundSize: 'cover',
+	backgroundRepeat: 'no-repeat'
+}));
+const DeviceLearnMoreCell = styled(Box, { name: 'device-learn-more-cell' })(({ gridArea }) => ({
+	gridArea: gridArea,
+	width: '100%',
+	padding: '29px 0 0 0',
+	borderTop:'1px solid #d2d2d7',
+	display: 'flex',
+	flexDirection: 'column',
+	alignItems: 'center',
+	justifyContent: 'flex-start'
+}));
 const iPad_description = [
 	//iPad Pro
 	{
@@ -143,6 +251,31 @@ const iPad_description = [
 				width: '45px',
 				height: '19px'
 			}
+		},
+		display_cell: {
+			p1: '12.9” and 11”',
+			p2: '12.9” Liquid Retina XDR display',
+			p3: '11” Liquid Retina display'
+		},
+		chip_cell: {
+			image: { url: 'url(./compare/compare_m1_chip_large_2x.png)' },
+			p: 'M1 chip'
+		},
+		connection_cell: {
+			image: { url: 'url(./compare/compare_usbc_thunderbolt_large_2x.png)', width: '61px', height: '22px' },
+			p: 'USB-C connector with support for Thunderbolt / USB 4'
+		},
+		cellular_cell: {
+			image: { url: 'url(./compare/compare_cellular_5g_large_2x.png)' },
+			p: '5G cellular'
+		},
+		pencil_cell: {
+			p1: 'Compatible with ',
+			p2: 'Apple Pencil (2nd generation)'
+		},
+		keyboard_cell: {
+			image: { url: 'url(./compare/compare_magic_keyboard_large_2x.png)' },
+			p: 'Compatible with Magic Keyboard and Smart Keyboard Folio'
 		}
 	},
 	//iPad Air
@@ -169,6 +302,31 @@ const iPad_description = [
 				width: '123px',
 				height: '18px'
 			}
+		},
+		display_cell: {
+			p1: '10.9”',
+			p2: 'Liquid Retina display',
+			p3: ''
+		},
+		chip_cell: {
+			image: { url: 'url(./compare/compare_a14_chip_large_2x.png)' },
+			p: 'A14 Bionic chip'
+		},
+		connection_cell: {
+			image: { url: 'url(./compare/compare_usbc_large_2x.png)', width: '32px', height: '22px' },
+			p: 'USB-C connector'
+		},
+		cellular_cell: {
+			image: { url: 'url(./compare/compare_cellular_4g_large_2x.png)' },
+			p: '4G LTE cellular'
+		},
+		pencil_cell: {
+			p1: 'Compatible with ',
+			p2: 'Apple Pencil (2nd generation)'
+		},
+		keyboard_cell: {
+			image: { url: 'url(./compare/compare_magic_keyboard_large_2x.png)' },
+			p: 'Compatible with Magic Keyboard and Smart Keyboard Folio'
 		}
 	},
 	//iPad
@@ -195,6 +353,31 @@ const iPad_description = [
 				width: '71px',
 				height: '18px'
 			}
+		},
+		display_cell: {
+			p1: '10.2”',
+			p2: 'Liquid display',
+			p3: ''
+		},
+		chip_cell: {
+			image: { url: 'url(./compare/compare_a12_chip_large_2x.png)' },
+			p: 'A12 Bionic chip'
+		},
+		connection_cell: {
+			image: { url: 'url(./compare/compare_lightning_large_2x.png)', width: '32px', height: '22px' },
+			p: 'Lightning connector'
+		},
+		cellular_cell: {
+			image: { url: 'url(./compare/compare_cellular_4g_large_2x.png)' },
+			p: '4G LTE cellular'
+		},
+		pencil_cell: {
+			p1: 'Compatible with ',
+			p2: 'Apple Pencil (1nd generation)'
+		},
+		keyboard_cell: {
+			image: { url: 'url(./compare/compare_smart_keyboard_large_2x.png)' },
+			p: 'Compatible with Smart Keyboard'
 		}
 	},
 	//iPad mini
@@ -221,6 +404,31 @@ const iPad_description = [
 				width: '71px',
 				height: '18px'
 			}
+		},
+		display_cell: {
+			p1: '7.9”',
+			p2: 'Liquid display',
+			p3: ''
+		},
+		chip_cell: {
+			image: { url: 'url(./compare/compare_a12_chip_large_2x.png)' },
+			p: 'A12 Bionic chip'
+		},
+		connection_cell: {
+			image: { url: 'url(./compare/compare_lightning_large_2x.png)', width: '32px', height: '22px' },
+			p: 'Lightning connector'
+		},
+		cellular_cell: {
+			image: { url: 'url(./compare/compare_cellular_4g_large_2x.png)' },
+			p: '4G LTE cellular'
+		},
+		pencil_cell: {
+			p1: 'Compatible with ',
+			p2: 'Apple Pencil (1nd generation)'
+		},
+		keyboard_cell: {
+			image: { url: 'url(./compare/compare_bluetooth_keyboard_large_2x.png)' },
+			p: 'Compatible with Bluetooth Keyboard'
 		}
 	}
 ];
@@ -253,25 +461,72 @@ const CompareSection = () => {
 					Compare all iPad models
 				</LinkButton>
 				<CompareGrid>
-					{iPad_description.map(({ girdAreas, image, device_content }) => (
-						<React.Fragment key={girdAreas.device_wrapper}>
-							<DeviceWrapper gridArea={girdAreas.device_wrapper}>
-								<ImageWrapper>
-									<Image image={image} />
-								</ImageWrapper>
-								<DeviceContent>
-									<Typography variant='device_headline' component='h3'>
-										{device_content.h3}
+					{iPad_description.map(
+						({
+							girdAreas,
+							image,
+							device_content,
+							display_cell,
+							chip_cell,
+							connection_cell,
+							cellular_cell,
+							pencil_cell,
+							keyboard_cell
+						}) => (
+							<React.Fragment key={girdAreas.device_wrapper}>
+								<DeviceWrapper gridArea={girdAreas.device_wrapper}>
+									<ImageWrapper>
+										<Image image={image} />
+									</ImageWrapper>
+									<DeviceContent>
+										<Typography variant='device_headline' component='h3'>
+											{device_content.h3}
+										</Typography>
+										<Typography variant='body_reduced' component='p'>
+											{device_content.price}
+										</Typography>
+										<DeviceAvailableColor image={device_content.availableColor} />
+										<HeroButton>Buy</HeroButton>
+									</DeviceContent>
+								</DeviceWrapper>
+								<DeviceDisplayCell gridArea={girdAreas.display_cell}>
+									<Typography variant='grid_headline' component='p' sx={{ mb: '8px' }}>
+										{display_cell.p1}
 									</Typography>
 									<Typography variant='body_reduced' component='p'>
-										{device_content.price}
+										{display_cell.p2}
 									</Typography>
-									<DeviceAvailableColor image={device_content.availableColor} />
-									<HeroButton>Buy</HeroButton>
-								</DeviceContent>
-							</DeviceWrapper>
-						</React.Fragment>
-					))}
+									<Typography variant='body_reduced' component='p'>
+										{display_cell.p3}
+									</Typography>
+								</DeviceDisplayCell>
+								<DeviceChipCell gridArea={girdAreas.chip_cell}>
+									<ChipImage icon={chip_cell.image.url} />
+									<Typography variant='body_reduced'>{chip_cell.p}</Typography>
+								</DeviceChipCell>
+								<DeviceConnectionCell gridArea={girdAreas.connnection_cell}>
+									<ConnectionImage icon={connection_cell.image} />
+									<Typography variant='body_reduced'>{connection_cell.p}</Typography>
+								</DeviceConnectionCell>
+								<DeviceCellularCell gridArea={girdAreas.celluar_cell}>
+									<CellularImage icon={cellular_cell.image} />
+									<Typography variant='body_reduced'>{cellular_cell.p}</Typography>
+								</DeviceCellularCell>
+								<DevicePencilCell gridArea={girdAreas.pencil_cell}>
+									<PencilImage />
+									<Typography variant='body_reduced'>{pencil_cell.p1}</Typography>
+									<Typography variant='body_reduced'>{pencil_cell.p2}</Typography>
+								</DevicePencilCell>
+								<DeviceKeyboardCell gridArea={girdAreas.keyboard_cell}>
+									<KeyBoardImage icon={keyboard_cell.image} />
+									<Typography variant='body_reduced'>{keyboard_cell.p}</Typography>
+								</DeviceKeyboardCell>
+								<DeviceLearnMoreCell gridArea={girdAreas.learn_more_cell}>
+									<LinkButton endIcon={<ArrowForwardIosIcon/>}>Learn more</LinkButton>
+								</DeviceLearnMoreCell>
+							</React.Fragment>
+						)
+					)}
 				</CompareGrid>
 			</Box>
 		</Grid>
