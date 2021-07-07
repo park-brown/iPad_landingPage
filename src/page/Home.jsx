@@ -15,6 +15,7 @@ import IPadOs from '../section/iPadOS15/IPadOs';
 import BuystripSection from '../section/buystrip/Buystrip';
 import IPadEssentials from '../section/iPadEssentials/IPadEssentials';
 import WhatMakesAnIPad from '../section/iPadPromote/WhatMakesAnIPad';
+import MoreIPad from '../section/moreIPad/MoreIPad';
 
 const Home = () => {
 	return (
@@ -35,6 +36,7 @@ const Home = () => {
 				<BuystripSection />
 				<IPadEssentials />
 				<WhatMakesAnIPad />
+				<MoreIPad />
 			</Grid>
 		</React.Fragment>
 	);
