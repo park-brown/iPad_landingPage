@@ -12,6 +12,8 @@ import BuyIPadForCollege from '../section/bts_2021/BuyIPadForCollege';
 import Carriers from '../section/carriers/Carriers';
 import TradeAndAppleCard from '../section/acmi_trade/TradeAndAppleCard';
 import IPadOs from '../section/iPadOS15/IPadOs';
+import BuystripSection from '../section/buystrip/Buystrip';
+import IPadEssentials from '../section/iPadEssentials/IPadEssentials';
 
 const Home = () => {
 	return (
@@ -29,6 +31,8 @@ const Home = () => {
 				<Carriers />
 				<TradeAndAppleCard />
 				<IPadOs />
+				<BuystripSection />
+				<IPadEssentials />
 			</Grid>
 		</React.Fragment>
 	);
