@@ -14,6 +14,7 @@ import TradeAndAppleCard from '../section/acmi_trade/TradeAndAppleCard';
 import IPadOs from '../section/iPadOS15/IPadOs';
 import BuystripSection from '../section/buystrip/Buystrip';
 import IPadEssentials from '../section/iPadEssentials/IPadEssentials';
+import WhatMakesAnIPad from '../section/iPadPromote/WhatMakesAnIPad';
 
 const Home = () => {
 	return (
@@ -33,6 +34,7 @@ const Home = () => {
 				<IPadOs />
 				<BuystripSection />
 				<IPadEssentials />
+				<WhatMakesAnIPad />
 			</Grid>
 		</React.Fragment>
 	);
